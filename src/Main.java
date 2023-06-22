@@ -40,8 +40,7 @@ public class Main {
         Date date = new Date();
         File dir = new File(path);
         if (dir.exists()) {
-            stringBuilder.append(date.toString() + " - Попытка создания директории по пути " + path + ", директория по данному пути "
-                    + path + ": уже существует!");
+            stringBuilder.append(date.toString() + " - Попытка создания директории по пути " + path + ", директория уже существует!");
             stringBuilder.append("\r\n");
         } else {
             if (dir.mkdir()) {
@@ -60,7 +59,7 @@ public class Main {
         File file = new File(path, nameFile);
         if (file.exists()) {
             stringBuilder.append(date.toString() + " - Попытка создания файла " + nameFile +
-                    ", файл " + nameFile + ": уже существует!");
+                    ", файл уже существует!");
             stringBuilder.append("\r\n");
         } else {
             try {
